@@ -1,0 +1,10 @@
+.message {
+  text-align: center;
+  color: var(--gray-300);
+  padding: 4rem 0;
+  border-top: solid 1px var(--gray-400);
+}
+
+.message img {
+  margin-bottom: 1rem;
+}

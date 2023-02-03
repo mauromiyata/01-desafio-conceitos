@@ -1,0 +1,37 @@
+.form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: -1.687rem;
+}
+
+.form input[type=text] {
+  flex: 1;
+  line-height: 3.375rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: var(--gray-500);
+  color: var(--white);
+}
+
+.form button {
+  padding: 1rem;
+  color: var(--white);
+  background: var(--blue-700);
+  border-radius: 0.5rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.form button:disabled {
+  cursor: not-allowed;
+}
+
+.form button:not(:disabled):hover {
+  background: var(--purple-700);
+}

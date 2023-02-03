@@ -1,0 +1,81 @@
+.task {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: var(--gray-500);
+  border: solid 1px var(--gray-400);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+  gap: 1rem;
+}
+
+.task p{
+  flex: 1;
+}
+
+.task button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: var(--gray-300);
+}
+
+.task button:hover{
+  color: var(--red-500);
+}
+
+.check{
+  position: relative;
+  width: 1.1rem;
+  height: 1.1rem;
+  flex-shrink: 0;
+  font-size: .5rem;
+  cursor: pointer;
+}
+
+.check input{
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.check span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: solid 2px var(--blue-500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  
+}
+
+.check span:after {
+  content: "";
+  display: none;
+}
+
+.check input:checked ~ span {
+  background: var(--purple-500);
+  border: none;
+}
+
+.check input:checked ~ span:after {
+  display: block;
+}
+
+.check span:after {
+  width: 0.5em;
+  height: 1em;
+  border: solid white;
+  border-width: 0 0.2em 0.2em 0;
+  transform: rotate(45deg);
+}
